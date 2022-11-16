@@ -2,8 +2,6 @@
     font-size: x-large;
     color: white;
     margin: 0px;
-    border: 1px solid white;   
-
 }
 
 body { 
@@ -13,19 +11,36 @@ body {
     background-position: top;
     background-attachment: fixed, scroll;
 }
+
 #content { 
     text-align: center;
-    opacity: .99;
-}
-
-#content >* {
-    background-color: darksalmon;
 }
 
 .header {
-    margin-bottom: 3000px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 0px;
+    border-bottom: 3px solid white;
+}
+.header > * {
+    background-color: transparent;
+    border: none;
+}
+.title {
+    margin: 200px 0px;
+    margin-bottom: 200px;
+    font-size: 80px;
 
 }
+.titleInfo {
+    margin: 180px 0px;
+    font-size: 40px;
+}
 .info {
-    height: 40vh;
+    background-color: black;
+    padding: 20px;
+    margin: 10vh 20vw;
+    border: 3px solid white;
+
 }
