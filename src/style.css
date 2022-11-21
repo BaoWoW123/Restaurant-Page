@@ -5,7 +5,7 @@
 }
 
 body { 
-    background: url('./food.jpg');
+    background: url('./images/food.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -31,16 +31,98 @@ body {
     margin: 200px 0px;
     margin-bottom: 200px;
     font-size: 80px;
-
 }
+
+.footer {
+    margin: 0;
+}
+
+.menuTitle {
+    margin: 40px auto;
+    padding-bottom: 40px;
+    font-size: 60px;
+}
+
 .titleInfo {
     margin: 180px 0px;
     font-size: 40px;
 }
+
 .info {
     background-color: black;
     padding: 20px;
     margin: 10vh 20vw;
     border: 3px solid white;
 
+}
+
+button:hover {
+    color: gray;
+    transition: .2s;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 10vw;
+}
+
+
+.menuTitle {
+    width: 100%;
+    margin: 100px;
+}
+
+.flan, .croissant, .rat, .sandwich{
+    margin: 20px;
+}
+
+img {
+    margin: 0px 120px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+img:hover {
+    border: 5px solid white;
+    border-radius: 20%;
+    transition: 1s;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-bottom: 44vh;
+}
+
+.contactTitle {
+    margin: 40px auto;
+    padding: 40px;
+    font-size: 60px !important;
+}
+
+.contact > * {
+    font-size: 30px;
+}
+
+.reviewsTitle {
+    margin: 40px auto;
+    padding: 40px;
+    font-size: 60px !important;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.reviews > * {
+    background-color: black;
+    padding: 30px;
+    box-shadow: inset 3px 1px 4px white;
+    font-size: 25px;
+    margin: 0px 200px;
 }
