@@ -44,16 +44,15 @@ body {
 }
 
 .titleInfo {
-    margin: 180px 0px;
+    margin: 150px 0px;
     font-size: 40px;
 }
 
 .info {
     background-color: black;
     padding: 20px;
-    margin: 10vh 20vw;
+    margin: 5vh 20vw;
     border: 3px solid white;
-
 }
 
 button:hover {

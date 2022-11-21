@@ -3,6 +3,7 @@ import './style.css';
 import menu from './pages/menu';
 import reviews from './pages/reviews';
 import contact from './pages/contact';
+import home from './pages/initialPage';
 
 function component() {
     const content = document.querySelector('#content');
@@ -33,25 +34,6 @@ function makeHeader() {
         contactTab.onclick = switchContact;
         return header;
     }
-function maketitle() {
-    const title =  document.createElement('div');
-    const titleInfo = document.createElement('div');
-
-    title.className ='title';
-    title.textContent = 'Café du Palais Français';
-    titleInfo.className = 'titleInfo'
-    titleInfo.textContent = 'Goûtez le meilleur';
-    title.appendChild(titleInfo);
-    return title;
-}
-
-function makeInfo() {
-    const info = document.createElement('div');
-
-    info.className ='info';
-    info.textContent = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, quisquam vitae? Laudantium nemo est vel error adipisci, hic repudiandae, cum maiores dolorum iure enim at illum autem quo, culpa dignissimos dicta! Ad laboriosam animi corporis neque autem, alias quia! Rerum sint repellat officia similique corrupti impedit aut quidem nihil quisquam?';
-    return info;
-}
 
 function makeFooter() {
     const footer = document.createElement('div');
@@ -64,8 +46,7 @@ function makeFooter() {
 function switchHome() {
     content.textContent = '';
     component().appendChild(makeHeader())
-    component().appendChild(maketitle())
-    component().appendChild(makeInfo())
+    component().appendChild(home)
     component().appendChild(makeFooter())
     document.body.appendChild(component())
 }
@@ -75,25 +56,22 @@ function switchMenu() {
     makeHeader()
     component().appendChild(menu)
     component().appendChild(makeFooter())
-    console.log('switch to menu')
 }
+
 function switchReview() {
     content.textContent = '';
     makeHeader()
     component().appendChild(reviews)
     component().appendChild(makeFooter())
-    console.log('switch to reviews')
 }
+
 function switchContact() {
     content.textContent = '';
     makeHeader()
     component().appendChild(contact)
     component().appendChild(makeFooter())
-    console.log('switch to contacts')
 }
 
 component().appendChild(makeHeader())
-component().appendChild(maketitle())
-component().appendChild(makeInfo())
+component().appendChild(home)
 component().appendChild(makeFooter())
-document.body.appendChild(component())
