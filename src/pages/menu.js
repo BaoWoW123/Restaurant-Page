@@ -11,9 +11,9 @@ function makeMenu() {
     const flan = document.createElement('div')
     const flanImg = document.createElement('img')
     const flanInfo = document.createElement('div')
-    flanInfo.textContent = 'Flan à la vanille avec caramel'
+    flanInfo.textContent = 'Flan à la vanille avec caramel';
     flanImg.src = '/src/images/flan.jpg'
-    flan.className = 'flan'
+    flan.className = 'flan';
     flan.appendChild(flanImg)
     flan.append(flanInfo)
     menu.appendChild(flan)
